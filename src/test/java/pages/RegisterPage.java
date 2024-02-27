@@ -18,6 +18,8 @@ public class RegisterPage extends BasePage{
 	public String emailErrorMessage = " অনুগ্রহ করে সঠিক ইমেইল প্রদান করুন";
 	public String passwordErrorMessage = " অনুগ্রহ করে আপনার পাসওয়ার্ড প্রদান করুন";
 	public String confirmPassworderrorMessage = " পাসওয়ার্ড মিলতেছে না";
+	public String alreadyUsedEmailErrorMessage = " এই ইমেইল অ্যাড্রেস দিয়ে ইতিমধ্যে একটি অ্যাকাউন্ট খোলা হয়েছে। অনুগ্রহ করে নতুন ইমেইল অ্যাড্রেস ব্যবহার করুন অথবা ";
+	
 	
 	public By errorMessageField = By.xpath("//ul[@class='woocommerce-error']/li");
 	
