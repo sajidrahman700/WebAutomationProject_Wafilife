@@ -34,9 +34,9 @@ public class TestHomePage extends DriverSetup{
 		getBrowser().get(homePage.homePageURL);
 		homePage.waitForElementToBeClickable(homePage.carouselIndicator_3rd);
 		homePage.clickOnElement(homePage.carouselIndicator_3rd);
-		String value = homePage.bannerURL(homePage.carouselBanner_3rd);
+		String bannerURL = homePage.getElementURL(homePage.carouselBanner_3rd);
 		homePage.clickOnElement(homePage.carouselBanner_3rd);
-		Assert.assertEquals(getBrowser().getCurrentUrl(),value);
+		Assert.assertEquals(getBrowser().getCurrentUrl(),bannerURL);
 		
 	}
 

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-26T23:40:51 BDT" name="Default suite" finished-at="2024-02-26T23:41:06 BDT" duration-ms="14633">
+  <suite started-at="2024-02-27T14:16:56 BDT" name="Default suite" finished-at="2024-02-27T14:17:06 BDT" duration-ms="9975">
     <groups>
     </groups>
-    <test started-at="2024-02-26T23:40:51 BDT" name="Default test" finished-at="2024-02-26T23:41:06 BDT" duration-ms="14633">
-      <class name="testcases.TestHomePage">
-        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestHomePage@4f0100a7]" started-at="2024-02-26T23:40:51 BDT" name="openABrowser" finished-at="2024-02-26T23:40:53 BDT" duration-ms="2278" status="PASS">
+    <test started-at="2024-02-27T14:16:56 BDT" name="Default test" finished-at="2024-02-27T14:17:06 BDT" duration-ms="9975">
+      <class name="testcases.TestHeader">
+        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:16:56 BDT" name="openABrowser" finished-at="2024-02-27T14:16:59 BDT" duration-ms="2273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openABrowser -->
-        <test-method signature="testOpenCarouselBanner()[pri:0, instance:testcases.TestHomePage@4f0100a7]" started-at="2024-02-26T23:40:53 BDT" name="testOpenCarouselBanner" finished-at="2024-02-26T23:41:05 BDT" duration-ms="12004" status="PASS">
+        <test-method signature="testOpenAMenu()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:16:59 BDT" name="testOpenAMenu" finished-at="2024-02-27T14:17:05 BDT" duration-ms="6591" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOpenCarouselBanner -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestHomePage@4f0100a7]" started-at="2024-02-26T23:41:05 BDT" name="quiteBrowser" finished-at="2024-02-26T23:41:06 BDT" duration-ms="225" status="PASS">
+        </test-method> <!-- testOpenAMenu -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:17:05 BDT" name="quiteBrowser" finished-at="2024-02-27T14:17:06 BDT" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
-      </class> <!-- testcases.TestHomePage -->
+      </class> <!-- testcases.TestHeader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

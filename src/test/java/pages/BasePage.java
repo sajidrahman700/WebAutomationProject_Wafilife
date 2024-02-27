@@ -83,5 +83,11 @@ public class BasePage {
 		 WebDriverWait wait = new WebDriverWait(getBrowser(), Duration.ofSeconds(10));
 		 wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
+	 
+	 
+	 public String getElementURL(By locator) {
+			return getAttributeValue(locator,"href");	
+			
+		}
 
 }
