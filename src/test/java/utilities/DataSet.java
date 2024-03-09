@@ -2,6 +2,7 @@ package utilities;
 
 import org.testng.annotations.DataProvider;
 
+import pages.LoginPage;
 import pages.RegisterPage;
 
 public class DataSet {
@@ -45,5 +46,23 @@ public class DataSet {
 		 return data;
 	
 	 }
+	
+	
+	
+
+	 @DataProvider(name = "invalidUserDataForLogin")
+	 public static Object invalidCredentialsForLogin(){
+		 
+		LoginPage loginPage = new LoginPage();
+        Object[][] data = {{"tutt@gh.com", "12", loginPage.passwordIncorrectErrorMessage},//LoginWithInvalidPassword
+               {"tghfh@gh.com", "ad", loginPage.usernameincorrectErrorMessage},//LoginWithInvalidEmail
+               {"tghfh@gh.com", "12", loginPage.usernameincorrectErrorMessage},//LoginWithInvalidEmailPassword
+               {"","ad", loginPage.usernameEmptyErrorMessage},//LoginWithoutEmail
+               {"tghfh@gh.com", "", loginPage.passwordEmptyErrorMessage},//LoginWithoutPassword
+               {"", "", loginPage.usernameEmptyErrorMessage}//LoginWithoutEmailPassword
+           };
+
+       return data;
+   }
 
 }
