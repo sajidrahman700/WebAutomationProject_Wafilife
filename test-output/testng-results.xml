@@ -1,25 +1,1033 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T14:16:56 BDT" name="Default suite" finished-at="2024-02-27T14:17:06 BDT" duration-ms="9975">
+  <suite started-at="2024-03-09T21:32:04 BDT" name="Default suite" finished-at="2024-03-09T21:34:01 BDT" duration-ms="117755">
     <groups>
     </groups>
-    <test started-at="2024-02-27T14:16:56 BDT" name="Default test" finished-at="2024-02-27T14:17:06 BDT" duration-ms="9975">
-      <class name="testcases.TestHeader">
-        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:16:56 BDT" name="openABrowser" finished-at="2024-02-27T14:16:59 BDT" duration-ms="2273" status="PASS">
+    <test started-at="2024-03-09T21:32:04 BDT" name="Default test" finished-at="2024-03-09T21:34:01 BDT" duration-ms="117755">
+      <class name="testcases.TestRegister">
+        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:04 BDT" name="openABrowser" finished-at="2024-03-09T21:32:06 BDT" duration-ms="2292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openABrowser -->
-        <test-method signature="testOpenAMenu()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:16:59 BDT" name="testOpenAMenu" finished-at="2024-02-27T14:17:05 BDT" duration-ms="6591" status="PASS">
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:06 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:15 BDT" duration-ms="8550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping all mandatory field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে সঠিক ইমেইল প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOpenAMenu -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestHeader@6ccdb29f]" started-at="2024-02-27T14:17:05 BDT" name="quiteBrowser" finished-at="2024-02-27T14:17:06 BDT" duration-ms="981" status="PASS">
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:15 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:20 BDT" duration-ms="5345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering more than one space]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:20 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:25 BDT" duration-ms="4918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering commas between alphabets]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:25 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:30 BDT" duration-ms="5139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering special charecters]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:30 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:35 BDT" duration-ms="4503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering numbers]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:35 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:40 BDT" duration-ms="5229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering numeric numbers and special characters]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:40 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:45 BDT" duration-ms="5181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering decimnal numbers]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:45 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:50 BDT" duration-ms="5033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping name field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: নাম প্রয়োজন!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:50 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:32:55 BDT" duration-ms="5204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering Alphabets]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: Error: ফোন নাম্বার প্রয়োজন!.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:32:55 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:01 BDT" duration-ms="5347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering Special characters]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: Error: ফোন নাম্বার প্রয়োজন!.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:01 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:06 BDT" duration-ms="5120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering invalid number]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: Error: ফোন নাম্বার প্রয়োজন!.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:06 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:11 BDT" duration-ms="4842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering less than 11 numbers]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: Error: ফোন নাম্বার প্রয়োজন!.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:11 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:15 BDT" duration-ms="4712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping phone number field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: Error: ফোন নাম্বার প্রয়োজন!.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:15 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:20 BDT" duration-ms="4902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering only numbers]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে সঠিক ইমেইল প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:20 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:25 BDT" duration-ms="5090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering invalid email address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে সঠিক ইমেইল প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:25 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:31 BDT" duration-ms="5264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping email field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে সঠিক ইমেইল প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:31 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:35 BDT" duration-ms="4704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering less than 6 characters]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে আপনার পাসওয়ার্ড প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:35 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:41 BDT" duration-ms="5216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping password field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: অনুগ্রহ করে আপনার পাসওয়ার্ড প্রদান করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:41 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:45 BDT" duration-ms="4818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering different password]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: পাসওয়ার্ড মিলতেছে না]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:45 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:51 BDT" duration-ms="5536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Keeping confirm password field blank]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: পাসওয়ার্ড মিলতেছে না]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:51 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:33:56 BDT" duration-ms="4950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tef,,,,,abax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0192332]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tefabax442@laymro]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering incorrect credentials]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: পাসওয়ার্ড মিলতেছে না]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method signature="testRegister(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.openqa.selenium.By,java.lang.String)[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:33:56 BDT" name="testRegister" data-provider="invalidUserDataForRegister" finished-at="2024-03-09T21:34:01 BDT" duration-ms="4983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tefabax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[01923320029]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tutt@gh.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Entering used email address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[By.xpath: //ul[@class='woocommerce-error']/li]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Error: এই ইমেইল অ্যাড্রেস দিয়ে ইতিমধ্যে একটি অ্যাকাউন্ট খোলা হয়েছে। অনুগ্রহ করে নতুন ইমেইল অ্যাড্রেস ব্যবহার করুন অথবা লগইন করুন]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestRegister@130e116b]" started-at="2024-03-09T21:34:01 BDT" name="quiteBrowser" finished-at="2024-03-09T21:34:01 BDT" duration-ms="619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
-      </class> <!-- testcases.TestHeader -->
+      </class> <!-- testcases.TestRegister -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
