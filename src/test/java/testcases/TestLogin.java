@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.HeaderPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.MyAccountPage;
 import utilities.DataSet;
 import utilities.DriverSetup;
 
@@ -13,7 +14,8 @@ public class TestLogin extends DriverSetup {
 	
     HomePage homePage = new HomePage();
 	HeaderPage headerPage = new HeaderPage();
-	LoginPage loginPage = new LoginPage();  
+	LoginPage loginPage = new LoginPage(); 
+	MyAccountPage myAccountPage = new MyAccountPage();
 	
 	
 	
@@ -52,8 +54,8 @@ public class TestLogin extends DriverSetup {
 	@Test
 	public void testLoginWithValidCredentials() {
 		loginPage.doLogin("tutt@gh.com", "ad");
-		Assert.assertEquals(getBrowser().getCurrentUrl(), loginPage.loginPageURL );
-		Assert.assertTrue(loginPage.getElement(loginPage.loginButton).isDisplayed());	
+		Assert.assertTrue(myAccountPage.getElement(myAccountPage.dashBoard).isEnabled());
+		Assert.assertEquals(myAccountPage.getElementText(myAccountPage.dashboardNotice), myAccountPage.displayDashboardNotice);
 	}
 	
 
