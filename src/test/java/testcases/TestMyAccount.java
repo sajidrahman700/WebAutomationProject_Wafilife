@@ -1,9 +1,6 @@
 package testcases;
 
 
-import java.util.NoSuchElementException;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -40,6 +37,8 @@ public class TestMyAccount extends DriverSetup {
 		
 		
 	}
+	
+	
 	@Test(dependsOnMethods = "testMyAccountOption")
 	public void testLogout() {
 		myAccountPage.clickOnElement(myAccountPage.logout);

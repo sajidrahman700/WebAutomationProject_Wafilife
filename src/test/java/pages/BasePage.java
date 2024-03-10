@@ -4,6 +4,7 @@ import static utilities.DriverSetup.getBrowser;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -93,6 +94,10 @@ public class BasePage {
 	 public String getElementURL(By locator) {
 			return getAttributeValue(locator,"href");	
 			
+		}
+	 
+	 public List<WebElement> getListOfElement(By locator) {
+		    return getBrowser().findElements(locator);
 		}
 	 
 	
