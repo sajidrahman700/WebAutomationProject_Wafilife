@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-10T01:43:33 BDT" name="Default suite" finished-at="2024-03-10T01:43:41 BDT" duration-ms="8065">
+  <suite started-at="2024-03-10T16:09:18 BDT" name="Default suite" finished-at="2024-03-10T16:10:07 BDT" duration-ms="49568">
     <groups>
     </groups>
-    <test started-at="2024-03-10T01:43:33 BDT" name="Default test" finished-at="2024-03-10T01:43:41 BDT" duration-ms="8065">
-      <class name="testcases.TestLogin">
-        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestLogin@5ddf0d24]" started-at="2024-03-10T01:43:33 BDT" name="openABrowser" finished-at="2024-03-10T01:43:35 BDT" duration-ms="2084" status="PASS">
+    <test started-at="2024-03-10T16:09:18 BDT" name="Default test" finished-at="2024-03-10T16:10:07 BDT" duration-ms="49568">
+      <class name="testcases.TestMyAccount">
+        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestMyAccount@e383572]" started-at="2024-03-10T16:09:18 BDT" name="openABrowser" finished-at="2024-03-10T16:09:20 BDT" duration-ms="1925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openABrowser -->
-        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:testcases.TestLogin@5ddf0d24]" started-at="2024-03-10T01:43:35 BDT" name="testLoginWithValidCredentials" finished-at="2024-03-10T01:43:41 BDT" duration-ms="5541" status="PASS">
+        <test-method signature="testMyAccountOption()[pri:0, instance:testcases.TestMyAccount@e383572]" started-at="2024-03-10T16:09:20 BDT" name="testMyAccountOption" finished-at="2024-03-10T16:10:03 BDT" duration-ms="43078" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestLogin@5ddf0d24]" started-at="2024-03-10T01:43:41 BDT" name="quiteBrowser" finished-at="2024-03-10T01:43:41 BDT" duration-ms="330" status="PASS">
+        </test-method> <!-- testMyAccountOption -->
+        <test-method signature="testLogout()[pri:0, instance:testcases.TestMyAccount@e383572]" started-at="2024-03-10T16:10:03 BDT" name="testLogout" finished-at="2024-03-10T16:10:07 BDT" depends-on-methods="testcases.TestMyAccount.testMyAccountOption" duration-ms="4075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestMyAccount@e383572]" started-at="2024-03-10T16:10:07 BDT" name="quiteBrowser" finished-at="2024-03-10T16:10:07 BDT" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
-      </class> <!-- testcases.TestLogin -->
+      </class> <!-- testcases.TestMyAccount -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
