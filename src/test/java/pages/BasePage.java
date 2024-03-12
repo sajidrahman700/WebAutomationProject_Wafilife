@@ -97,8 +97,13 @@ public class BasePage {
 		}
 	 
 	 public List<WebElement> getListOfElement(By locator) {
-		    return getBrowser().findElements(locator);
+		 return getBrowser().findElements(locator);
 		}
+	 
+	 public void scrollToAElement(WebElement element) {
+		 JavascriptExecutor js = (JavascriptExecutor) getBrowser();
+		 js.executeScript("arguments[0].scrollIntoView();", element); 
+	 }
 	 
 	
 }
