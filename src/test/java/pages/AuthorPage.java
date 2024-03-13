@@ -17,12 +17,17 @@ public class AuthorPage extends BasePage{
 	}
     
     public void selectAuthor(String name) {
-    	/*By element = By.xpath("//h3[normalize-space()='"+name+"']");
+    	By element = By.xpath("//h3[normalize-space()='"+name+"']");
     	scrollToAElement(element);
-		clickOnElement(element);*/
-    	clickOnElement(By.xpath("//h3[normalize-space()='"+name+"']"));
+    	waitForElementToBeClickable(element);
+		clickOnElement(element);
+    	//clickOnElement(By.xpath("//h3[normalize-space()='"+name+"']"));
     	
 	}
+    
+  public void loadAuthorPage() {
+	  loadAWebPage("https://www.wafilife.com/cat/books/author");
+  }
 	
 	/*public void selectPagenumber(String number) {
 		List<WebElement> elements = getListOfElement(pageNumberList);

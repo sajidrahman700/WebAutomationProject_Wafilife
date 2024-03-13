@@ -60,11 +60,8 @@ public class TestAuthor extends DriverSetup {
 	
 	@Test(priority = 3)
 	public void testDisplayBooksOfAAuthor() {
-		//homePage.loadAWebPage(homePage.homePageURL);
-		//headerPage.clickOnElement(headerPage.menu_Author);
-		//getBrowser().navigate().back();
-		authorPage.waitForElementToBeClickable(authorPage.authorList);
-		authorPage.selectAuthor("M. N. Pearson");
+		authorPage.loadAuthorPage();
+		authorPage.selectAuthor("Md. Fazlul Haque");
 		
 	}
 	
