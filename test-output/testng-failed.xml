@@ -8,6 +8,7 @@
           <include name="openABrowser"/>
           <include name="testNextPageNumber"/>
           <include name="quiteBrowser"/>
+          <include name="testRightwardArrow"/>
         </methods>
       </class> <!-- testcases.TestAuthor -->
     </classes>

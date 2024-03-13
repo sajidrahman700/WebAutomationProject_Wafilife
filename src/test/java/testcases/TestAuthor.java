@@ -2,6 +2,7 @@ package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pages.AuthorPage;
 import pages.HeaderPage;
@@ -16,9 +17,11 @@ public class TestAuthor extends DriverSetup {
 	HeaderPage headerPage = new HeaderPage();
 	LoginPage loginPage = new LoginPage();
 	MyAccountPage myAccountPage = new MyAccountPage();
-	AuthorPage authorPage = new AuthorPage()
-;	
-	@Test
+	AuthorPage authorPage = new AuthorPage();
+	SoftAssert softAssert = new SoftAssert();	
+	
+	
+	@Test(priority = 0)
 	public void testDisplayAuthorNames() {
 		homePage.loadAWebPage(homePage.homePageURL);
 		headerPage.clickOnElement(headerPage.menu_Author);
@@ -26,32 +29,42 @@ public class TestAuthor extends DriverSetup {
 		
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void testNextPageNumber() {
-		homePage.loadAWebPage(homePage.homePageURL);
-		headerPage.clickOnElement(headerPage.menu_Author);
-		authorPage.scrollToAElement(authorPage.pageNumberList);
-	    authorPage.selectPagenumber("2");
-		Assert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
-		
-		
-	}
+		try{
+			//homePage.loadAWebPage(homePage.homePageURL);
+	        //headerPage.clickOnElement(headerPage.menu_Author);
+	        authorPage.scrollToAElement(authorPage.pageNumberList);
+	        authorPage.selectPagenumber("2");
+	        softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed(), "Author heading is not displayed");
+		}
+	    finally{
+	    	getBrowser().navigate().back();
+	    }
+	    }
+	    
 	
-	@Test
+	@Test(priority = 2)
 	public void testRightwardArrow() {
-		homePage.loadAWebPage(homePage.homePageURL);
-		headerPage.clickOnElement(headerPage.menu_Author);
-		authorPage.scrollToAElement(authorPage.pageNumberList);
-		authorPage.selectPagenumber("→");
-		Assert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
-		
+		try{
+			//homePage.loadAWebPage(homePage.homePageURL);
+		    //headerPage.clickOnElement(headerPage.menu_Author);
+		    authorPage.scrollToAElement(authorPage.pageNumberList);
+		    authorPage.selectPagenumber("→");
+		    softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
+		}
+		finally{
+			getBrowser().navigate().back();
+		}
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void testDisplayBooksOfAAuthor() {
-		homePage.loadAWebPage(homePage.homePageURL);
-		headerPage.clickOnElement(headerPage.menu_Author);
-		authorPage.selectAuthor("Dr. Muhammad Moniuzzaman");
+		//homePage.loadAWebPage(homePage.homePageURL);
+		//headerPage.clickOnElement(headerPage.menu_Author);
+		//getBrowser().navigate().back();
+		authorPage.waitForElementToBeClickable(authorPage.authorList);
+		authorPage.selectAuthor("M. N. Pearson");
 		
 	}
 	
