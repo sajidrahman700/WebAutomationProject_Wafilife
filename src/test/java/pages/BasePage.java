@@ -55,10 +55,22 @@ public class BasePage {
 		 js.executeScript("arguments[0].scrollIntoView();", getElement(locator)); 
 	 }
 	 
-	 public void selectDropdown(By locator, int number) {
+	 public void selectDropdownByIndex(By locator, int number) {
 		 Select select = new Select(getElement(locator));
 		 getElement(locator).click();
 		 select.selectByIndex(number);
+	 }
+	 
+	 public String getSelectOptionText(By locator) {
+		 Select select = new Select(getElement(locator));
+		 return select.getFirstSelectedOption().getText();
+		 
+	 }
+	 
+	 public void selectDropdownByText(By locator, String text) {
+		 Select select = new Select(getElement(locator));
+		 getElement(locator).click();
+		 select.selectByVisibleText(text);
 	 }
 	 
 	 public void clearField(By locator) {
