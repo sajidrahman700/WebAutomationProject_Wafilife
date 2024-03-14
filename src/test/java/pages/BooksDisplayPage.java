@@ -7,6 +7,7 @@ public class BooksDisplayPage extends BasePage {
 	public By sorting = By.xpath("//select[contains(@class,'select_field')]");
 	public By description = By.xpath("//div[@class='short-description']");
 	public By readMore = By.xpath("//a[contains(text(),'আরো পড়ুন')]");
+	public By orderButton = By.xpath("//div[@class='body-wrapper']//button[2]");
 	
 	public String selectedBookTitle(String name) {
 		String title= getElementText(By.xpath("//h1[contains(text(),'"+name+"')]"));
