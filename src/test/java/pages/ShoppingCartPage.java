@@ -19,5 +19,7 @@ public class ShoppingCartPage extends BasePage {
 	public String displayAddProductPrice(int number) {
 		return getElementText(By.xpath("//tbody/tr["+number+"]/td[2]/span[2]/bdi"));
 	}
+	
+	
 
 }

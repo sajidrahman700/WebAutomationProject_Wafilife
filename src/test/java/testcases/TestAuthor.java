@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import pages.AuthorPage;
+import pages.BooksDisplayPage;
 import pages.HeaderPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -18,7 +19,8 @@ public class TestAuthor extends DriverSetup {
 	LoginPage loginPage = new LoginPage();
 	MyAccountPage myAccountPage = new MyAccountPage();
 	AuthorPage authorPage = new AuthorPage();
-	SoftAssert softAssert = new SoftAssert();	
+	SoftAssert softAssert = new SoftAssert();
+	BooksDisplayPage booksDisplayPage = new BooksDisplayPage();
 	
 	
 	@Test(priority = 0)
@@ -30,38 +32,39 @@ public class TestAuthor extends DriverSetup {
 	}
 	
 	@Test(priority = 1)
-	public void testNextPageNumber() {
-		try{
-			//homePage.loadAWebPage(homePage.homePageURL);
-	        //headerPage.clickOnElement(headerPage.menu_Author);
+	public void testNextPageNumber(){
+		try {
+			authorPage.loadAuthorPage();
 	        authorPage.scrollToAElement(authorPage.pageNumberList);
 	        authorPage.selectPagenumber("2");
-	        softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed(), "Author heading is not displayed");
+	        softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
 		}
-	    finally{
-	    	getBrowser().navigate().back();
-	    }
+		finally{
+			getBrowser().navigate().back();
+		} 
 	    }
 	    
 	
 	@Test(priority = 2)
-	public void testRightwardArrow() {
-		try{
-			//homePage.loadAWebPage(homePage.homePageURL);
-		    //headerPage.clickOnElement(headerPage.menu_Author);
+	public void testRightwardArrow(){
+		try {
+			authorPage.loadAuthorPage();
 		    authorPage.scrollToAElement(authorPage.pageNumberList);
 		    authorPage.selectPagenumber("→");
 		    softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
 		}
+
 		finally{
 			getBrowser().navigate().back();
 		}
 	}
 	
 	@Test(priority = 3)
-	public void testDisplayBooksOfAAuthor() {
+	public void testDisplayBooksOfAAuthor(){
 		authorPage.loadAuthorPage();
-		authorPage.selectAuthor("Md. Fazlul Haque");
+		authorPage.selectAuthor("Mahbub Hasan Lingcon");
+		Assert.assertEquals(getBrowser().getTitle(), booksDisplayPage.BooksDisplayPageTitle("Mahbub Hasan Lingcon"));
+		
 		
 	}
 	
