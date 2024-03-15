@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.BooksDisplayPage;
+import pages.CheckoutPage;
 import pages.ShoppingCartPage;
 import utilities.DriverSetup;
 
@@ -14,6 +15,8 @@ import utilities.DriverSetup;
 public class TestShoppingCart extends DriverSetup {
 	ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
 	BooksDisplayPage booksDisplayPage = new BooksDisplayPage();
+	CheckoutPage checkOutPage = new CheckoutPage();
+
 	
 	@Test(dependsOnGroups = "order")
 	public void testShoppingCartButton() {
@@ -39,15 +42,15 @@ public class TestShoppingCart extends DriverSetup {
 	
 	@Test(dependsOnMethods = "testUpdateQuantity")
 	public void testUpdatedTotalPrice() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Assert.assertEquals(shoppingCartPage.getElementText(shoppingCartPage.displayAddProductPrice(1)),"1,160 ৳");
 				
 	}
 	
-	@Test(dependsOnMethods = "testUpdatedTotalPrice")
+	@Test(dependsOnMethods = "testUpdatedTotalPrice", groups = "ShoppingCart")
 	public void testCompleteTheOrderButton() {
 		shoppingCartPage.clickOnElement(shoppingCartPage.completeOrderButon);
-		
+		Assert.assertEquals(getBrowser().getTitle(),checkOutPage.checkoutPageTitle);
 		
 	}
 
