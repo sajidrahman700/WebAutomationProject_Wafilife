@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TestAuthor">
+      <class name="testcases.TestOrder">
         <methods>
           <include name="openABrowser"/>
-          <include name="testNextPageNumber"/>
           <include name="quiteBrowser"/>
-          <include name="testRightwardArrow"/>
+          <include name="testOrderButton"/>
         </methods>
-      </class> <!-- testcases.TestAuthor -->
+      </class> <!-- testcases.TestOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

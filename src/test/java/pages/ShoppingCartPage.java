@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class ShoppingCartPage extends BasePage {
 	
-	public By productAddedMsg = By.xpath("//span[@class='title']");
+	public By productAddedMsg = By.xpath("//div[@class='modal-header']/span");
 	public By shoppingCartButton = By.xpath("//span[contains(text(),'শপিং ব্যাগ')]");
 	public By completeOrderButon = By.xpath("//a[@class='checkout-button button alt wc-forward']");
 	
