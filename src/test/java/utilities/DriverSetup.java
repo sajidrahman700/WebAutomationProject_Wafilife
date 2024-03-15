@@ -7,7 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 public class DriverSetup {
 	
@@ -37,7 +39,7 @@ public class DriverSetup {
     }
 
     
-    @BeforeClass
+    @BeforeSuite
     public void openABrowser(){
         WebDriver browser = getBrowser(browserName);
         browser.manage().window().maximize();
@@ -45,7 +47,7 @@ public class DriverSetup {
         setBrowser(browser);
     }
 
-    @AfterClass
+    @AfterSuite
     public void quiteBrowser(){
         getBrowser().quit();
     }

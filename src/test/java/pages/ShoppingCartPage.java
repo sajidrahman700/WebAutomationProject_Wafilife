@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 
 public class ShoppingCartPage extends BasePage {
+	public String shoppingCartTitle ="শপিং ব্যাগ";
 	
 	public By productAddedMsg = By.xpath("//div[@class='modal-header']/span");
 	public By shoppingCartButton = By.xpath("//span[contains(text(),'শপিং ব্যাগ')]");
@@ -16,9 +17,11 @@ public class ShoppingCartPage extends BasePage {
 		return getElementText(By.xpath("//tbody/tr["+number+"]/td[2]/a"));
 	}
 	
-	public String displayAddProductPrice(int number) {
-		return getElementText(By.xpath("//tbody/tr["+number+"]/td[2]/span[2]/bdi"));
+	public By displayAddProductPrice(int number) {
+		return By.xpath("//tbody/tr["+number+"]/td[2]/span[2]/bdi");
 	}
+	
+	
 	
 	
 
