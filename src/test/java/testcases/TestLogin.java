@@ -19,31 +19,31 @@ public class TestLogin extends DriverSetup {
 	
 	
 	
-	@Test
+	@Test(priority = 0, description = "Verify the login page title", dependsOnGroups = "header")
 	public void testloginPagetitle() {
-		getBrowser().get(homePage.homePageURL);
+		//getBrowser().get(homePage.homePageURL);
 		homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertEquals(getBrowser().getTitle(),loginPage.loginPageTitle);	
 	}
 	
-	@Test
+	@Test(priority = 1, description = "Verify that all required fields are present in the login section",dependsOnMethods = "testloginPagetitle")
 	public void testInputFieldIsPresent() {
-		getBrowser().get(homePage.homePageURL);
-		homePage.clickOnElement(headerPage.loginAndRegisterOption);
+		//getBrowser().get(homePage.homePageURL);
+		//homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertTrue(loginPage.getElement(loginPage.userNameInputField).isEnabled());
 		Assert.assertTrue(loginPage.getElement(loginPage.passwordInputField).isEnabled());
 
 	}
 	
-	@Test
+	@Test(priority = 2, description = "Verify that the Login button is present",dependsOnMethods = "testloginPagetitle")
 	public void testRegisterButonIsPresent() {
-		getBrowser().get(homePage.homePageURL);
-		homePage.clickOnElement(headerPage.loginAndRegisterOption);
+		//getBrowser().get(homePage.homePageURL);
+		//homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertTrue(loginPage.getElement(loginPage.loginButton).isDisplayed());
 		
 	}
 	
-	@Test(dataProvider = "invalidUserDataForLogin", dataProviderClass = DataSet.class)
+	@Test(dataProvider = "invalidUserDataForLogin", dataProviderClass = DataSet.class, priority = 3, description = "Verify Login with invalid credentials",dependsOnMethods = "testloginPagetitle")
 	public void testLoginWithInvalidCredentials(String userName, String password, String displayErrorMsg) {
 		loginPage.doLogin(userName, password);
 		Assert.assertTrue(loginPage.getElement(loginPage.errorMessageField).isDisplayed());
@@ -51,7 +51,7 @@ public class TestLogin extends DriverSetup {
 			
 	}
 	
-	@Test
+	@Test(priority = 4, description = "Verify that successfully login after clicking the Login button with a valid credential",groups = "login",dependsOnMethods = "testloginPagetitle")
 	public void testLoginWithValidCredentials() {
 		loginPage.doLogin("tutt@gh.com", "ad");
 		Assert.assertTrue(myAccountPage.getElement(myAccountPage.dashBoard).isEnabled());

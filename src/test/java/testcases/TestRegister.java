@@ -16,17 +16,17 @@ public class TestRegister extends DriverSetup {
 	HeaderPage headerPage = new HeaderPage();
 	RegisterPage registerPage = new RegisterPage();
 	
-	@Test
+	@Test(priority = 0, description = "Verify the Register page title")
 	public void testRegisterPagetitle() {
 		getBrowser().get(homePage.homePageURL);
 		homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertEquals(getBrowser().getTitle(),registerPage.registerPageTitle);	
 	}
 	
-	@Test
+	@Test(priority = 1, description = "Verify that all required fields are present in the login section")
 	public void testInputFieldIsPresent() {
-		getBrowser().get(homePage.homePageURL);
-		homePage.clickOnElement(headerPage.loginAndRegisterOption);
+		//getBrowser().get(homePage.homePageURL);
+		//homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertTrue(registerPage.getElement(registerPage.nameInputField).isEnabled());
 		Assert.assertTrue(registerPage.getElement(registerPage.phonenumberInputField).isEnabled());
 		Assert.assertTrue(registerPage.getElement(registerPage.emailInputField).isEnabled());
@@ -35,26 +35,27 @@ public class TestRegister extends DriverSetup {
 
 	}
 	
-	@Test
+	@Test(priority = 2, description = "Verify that the Register button is present")
 	public void testRegisterButonIsPresent() {
-		getBrowser().get(homePage.homePageURL);
-		homePage.clickOnElement(headerPage.loginAndRegisterOption);
+		//getBrowser().get(homePage.homePageURL);
+		//homePage.clickOnElement(headerPage.loginAndRegisterOption);
 		Assert.assertTrue(registerPage.getElement(registerPage.registerButton).isDisplayed());
 		
 	}
 	
-	@Test(dataProvider = "invalidUserDataForRegister", dataProviderClass = DataSet.class)
+	@Test(dataProvider = "invalidUserDataForRegister", dataProviderClass = DataSet.class, priority = 3, description = "Verify Register with invalid credentials")
 	public void testRegister(String Name, String Number, String Email, String Password, String ConfirmPassword, String SsName, By locator, String displayErrorMsg ) {
-		getBrowser().get(homePage.homePageURL);
-		homePage.clickOnElement(headerPage.loginAndRegisterOption);
-	
+		//getBrowser().get(homePage.homePageURL);
+		//homePage.clickOnElement(headerPage.loginAndRegisterOption);
+	    registerPage.loadAWebPage(registerPage.registerPageURL);
 		registerPage.writeOnAElement(registerPage.nameInputField,Name);
 		registerPage.writeOnAElement(registerPage.phonenumberInputField, Number);
 		registerPage.writeOnAElement(registerPage.emailInputField, Email);
 		registerPage.writeOnAElement(registerPage.passwordInputField, Password);
 		registerPage.writeOnAElement(registerPage.confirmPasswordInputField, ConfirmPassword);
-		registerPage.clickOnElement(registerPage.registerButton);
 		registerPage.takeScreenShot("SsName");
+		registerPage.clickOnElement(registerPage.registerButton);
+		
 		Assert.assertTrue(registerPage.getElement(locator).isDisplayed());
 		Assert.assertEquals(registerPage.getElementText(locator), displayErrorMsg );
 		

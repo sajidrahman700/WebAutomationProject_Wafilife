@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>44/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 25 17:53:06 BDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80414 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TestShoppingCart.testShoppingCartButton()'><b>testShoppingCartButton</b><br>Test class: testcases.TestShoppingCart<br>Test method: Verify that the shopping cart button is clickable</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestShoppingCart@7c137fd5</td></tr>
+<tr>
+<td title='testcases.TestBooksDisplay.testBookNameAndPrice()'><b>testBookNameAndPrice</b><br>Test class: testcases.TestBooksDisplay<br>Test method: Verify that the book's name and price are correctly displayed</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestBooksDisplay@5890e879</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testEmergencyPhoneNumberField()'><b>testEmergencyPhoneNumberField</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can write in the Emergency phone number field</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestBooksDisplay.testBookDescription()'><b>testBookDescription</b><br>Test class: testcases.TestBooksDisplay<br>Test method: Verify the selected book's descriptions</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestBooksDisplay@5890e879</td></tr>
+<tr>
+<td title='testcases.TestShoppingCart.testUpdatedTotalPrice()'><b>testUpdatedTotalPrice</b><br>Test class: testcases.TestShoppingCart<br>Test method: Verify that the total price is updated accordingly</td>
+<td></td>
+<td>5</td>
+<td>testcases.TestShoppingCart@7c137fd5</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testOtherInformationField()'><b>testOtherInformationField</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can write in the Other information field</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestAuthor.testNextPageNumber()'><b>testNextPageNumber</b><br>Test class: testcases.TestAuthor<br>Test method: Verify the next page number option</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestAuthor@6c284af</td></tr>
+<tr>
+<td title='testcases.TestHeader.testLogoFunctionality()'><b>testLogoFunctionality</b><br>Test class: testcases.TestHeader<br>Test method: Verify the home page should be open by clicking on the logo on all pages</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestMyAccount.testMyAccountOption()'><b>testMyAccountOption</b><br>Test class: testcases.TestMyAccount<br>Test method: Verify that the My account option is clickable</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestMyAccount@7d9d0818</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: , , Error: ইউজার নাম প্রয়োজন</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestAuthor.testDisplayAuthorNames()'><b>testDisplayAuthorNames</b><br>Test class: testcases.TestAuthor<br>Test method: Verify that displays a list of author names after clicking the Author option</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestAuthor@6c284af</td></tr>
+<tr>
+<td title='testcases.TestBooksDisplay.testSelectABook()'><b>testSelectABook</b><br>Test class: testcases.TestBooksDisplay<br>Test method: Verify that all the books that are shown are clickable</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestBooksDisplay@5890e879</td></tr>
+<tr>
+<td title='testcases.TestShoppingCart.testCompleteTheOrderButton()'><b>testCompleteTheOrderButton</b><br>Test class: testcases.TestShoppingCart<br>Test method: Verify that open a checkout page after clicking the Complete the order button</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestShoppingCart@7c137fd5</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testSelectUpazila()'><b>testSelectUpazila</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can select an area or Upazila</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testSelectPaymentOption()'><b>testSelectPaymentOption</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can select a payment option</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestLogin.testloginPagetitle()'><b>testloginPagetitle</b><br>Test class: testcases.TestLogin<br>Test method: Verify the login page title</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestBooksDisplay.testSortingBooks()'><b>testSortingBooks</b><br>Test class: testcases.TestBooksDisplay<br>Test method: Verify that the user can sort the books by More relevant, Discount, and Price</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestBooksDisplay@5890e879</td></tr>
+<tr>
+<td title='testcases.TestHeader.testDisplaySearchBar()'><b>testDisplaySearchBar</b><br>Test class: testcases.TestHeader<br>Test method: Verify that the Search bar is added to the header</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestHomePage.testDisplayCarouselBanner()'><b>testDisplayCarouselBanner</b><br>Test class: testcases.TestHomePage<br>Test method: Verify that any deals, discounts, or carousel banner are correctly displayed on the home page</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestHomePage@57a78e3</td></tr>
+<tr>
+<td title='testcases.TestLogin.testInputFieldIsPresent()'><b>testInputFieldIsPresent</b><br>Test class: testcases.TestLogin<br>Test method: Verify that all required fields are present in the login section</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestAuthor.testRightwardArrow()'><b>testRightwardArrow</b><br>Test class: testcases.TestAuthor<br>Test method: Verify the Rightward Arrow option</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestAuthor@6c284af</td></tr>
+<tr>
+<td title='testcases.TestHeader.testDisplayLoginRegister()'><b>testDisplayLoginRegister</b><br>Test class: testcases.TestHeader<br>Test method: Verify that the Login and Register option is displayed</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: tghfh@gh.com, ad, Unknown email address. Check again or try your username.</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestShoppingCart.testAddedProductTitle()'><b>testAddedProductTitle</b><br>Test class: testcases.TestShoppingCart<br>Test method: Verify that the item in the shopping cart displays the correct information</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestShoppingCart@7c137fd5</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: , ad, Error: ইউজার নাম প্রয়োজন</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestShoppingCart.testUpdateQuantity()'><b>testUpdateQuantity</b><br>Test class: testcases.TestShoppingCart<br>Test method: Verify that users can change the quantity of items in the cart</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestShoppingCart@7c137fd5</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithValidCredentials()'><b>testLoginWithValidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify that successfully login after clicking the Login button with a valid credential</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestHomePage.testOpenCarouselBanner()'><b>testOpenCarouselBanner</b><br>Test class: testcases.TestHomePage<br>Test method: Verify that carousel banners are working perfectly</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestHomePage@57a78e3</td></tr>
+<tr>
+<td title='testcases.TestHeader.testDisplayLogo()'><b>testDisplayLogo</b><br>Test class: testcases.TestHeader<br>Test method: Verify whether the logo of the website is added or not on the header</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: tutt@gh.com, 123, Error: The password you entered for the email address tutt@gh.com is incorrect. Lost your password?</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestHomePage.testDisplayFeatureBooks()'><b>testDisplayFeatureBooks</b><br>Test class: testcases.TestHomePage<br>Test method: Verify that featured books are displayed on the home page</td>
+<td></td>
+<td>5</td>
+<td>testcases.TestHomePage@57a78e3</td></tr>
+<tr>
+<td title='testcases.TestOrder.testOrderButton()'><b>testOrderButton</b><br>Test class: testcases.TestOrder<br>Test method: Verify that the Order button is Clickable</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestOrder@31ea9581</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: tghkl@gh.com, 321, Unknown email address. Check again or try your username.</td>
+<td></td>
+<td>4</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestLogin.testRegisterButonIsPresent()'><b>testRegisterButonIsPresent</b><br>Test class: testcases.TestLogin<br>Test method: Verify that the Login button is present</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testAddressField()'><b>testAddressField</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can write the full address in the Address field</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestCheckout.testSelectDistrict()'><b>testSelectDistrict</b><br>Test class: testcases.TestCheckout<br>Test method: Verify that the user can select a district</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestCheckout@183ec003</td></tr>
+<tr>
+<td title='testcases.TestAuthor.testDisplayBooksOfAAuthor()'><b>testDisplayBooksOfAAuthor</b><br>Test class: testcases.TestAuthor<br>Test method: Verify that the author's all books are displayed after clicking the author's name</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestAuthor@6c284af</td></tr>
+<tr>
+<td title='testcases.TestLogin.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: testcases.TestLogin<br>Test method: Verify Login with invalid credentials<br>Parameters: tutt@gh.com, , Error: The password field is empty.</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestLogin@268f106e</td></tr>
+<tr>
+<td title='testcases.TestOrder.testProductAddedToCart()'><b>testProductAddedToCart</b><br>Test class: testcases.TestOrder<br>Test method: Verify that a product is added to the cart after clicking the Order button</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestOrder@31ea9581</td></tr>
+<tr>
+<td title='testcases.TestHeader.testOpenAMenu()'><b>testOpenAMenu</b><br>Test class: testcases.TestHeader<br>Test method: Verify that all menu options should be opened after clicking any menu</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestHeader.testDisplayMenuBar()'><b>testDisplayMenuBar</b><br>Test class: testcases.TestHeader<br>Test method: Verify that the Menu bar is added to the header</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestHeader.testOpenLoginAndRegisterPage()'><b>testOpenLoginAndRegisterPage</b><br>Test class: testcases.TestHeader<br>Test method: Verify that the Login and Register option should be clickable</td>
+<td></td>
+<td>2</td>
+<td>testcases.TestHeader@7ce69770</td></tr>
+<tr>
+<td title='testcases.TestBooksDisplay.testAuthorNameOfBook()'><b>testAuthorNameOfBook</b><br>Test class: testcases.TestBooksDisplay<br>Test method: Verify that the book's author name is correctly displayed</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestBooksDisplay@5890e879</td></tr>
+<tr>
+<td title='testcases.TestMyAccount.testLogout()'><b>testLogout</b><br>Test class: testcases.TestMyAccount<br>Test method: Verify that the user can log out by clicking the Logout option</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestMyAccount@7d9d0818</td></tr>
+</table><p>
+</body>
+</html>

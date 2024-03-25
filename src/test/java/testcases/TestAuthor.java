@@ -23,45 +23,39 @@ public class TestAuthor extends DriverSetup {
 	BooksDisplayPage booksDisplayPage = new BooksDisplayPage();
 	
 	
-	@Test(priority = 0)
+	@Test(priority = 0, description = "Verify that displays a list of author names after clicking the Author option",dependsOnGroups = "login")
 	public void testDisplayAuthorNames() {
-		homePage.loadAWebPage(homePage.homePageURL);
+		//homePage.loadAWebPage(homePage.homePageURL);
 		headerPage.clickOnElement(headerPage.menu_Author);
 		Assert.assertTrue(authorPage.getElement(authorPage.authorList).isDisplayed());
 		
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, description = "Verify the next page number option", dependsOnMethods = "testDisplayAuthorNames")
 	public void testNextPageNumber(){
-		try {
-			authorPage.loadAuthorPage();
+		
+			//authorPage.loadAuthorPage();
 	        authorPage.scrollToAElement(authorPage.pageNumberList);
 	        authorPage.selectPagenumber("2");
 	        softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
-		}
-		finally{
-			getBrowser().navigate().back();
-		} 
+	        getBrowser().navigate().back();
+		 
 	    }
 	    
 	
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Verify the Rightward Arrow option", dependsOnMethods = "testNextPageNumber")
 	public void testRightwardArrow(){
-		try {
-			authorPage.loadAuthorPage();
+		
+			//authorPage.loadAuthorPage();
 		    authorPage.scrollToAElement(authorPage.pageNumberList);
 		    authorPage.selectPagenumber("→");
 		    softAssert.assertTrue(authorPage.getElement(authorPage.authorHeading).isDisplayed());
-		}
-
-		finally{
 			getBrowser().navigate().back();
-		}
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, description = "Verify that the author's all books are displayed after clicking the author's name", dependsOnMethods = "testRightwardArrow",groups = "AuthorBook")
 	public void testDisplayBooksOfAAuthor(){
-		authorPage.loadAuthorPage();
+		//authorPage.loadAuthorPage();
 		authorPage.selectAuthor("Mahbub Hasan Lingcon");
 		Assert.assertEquals(getBrowser().getTitle(), booksDisplayPage.BooksDisplayPageTitle("Mahbub Hasan Lingcon"));
 		

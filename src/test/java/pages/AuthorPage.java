@@ -1,10 +1,9 @@
 package pages;
 
-import java.util.List;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebElement;
+
 
 public class AuthorPage extends BasePage{
 	public By pageNumberOption = By.xpath("//ul[@class='page-numbers']");
@@ -12,13 +11,14 @@ public class AuthorPage extends BasePage{
     public By pageNumberList = By.xpath("//ul[@class='page-numbers']/li");
     public By authorHeading = By.xpath("//h1[contains(text(),'লেখক')]");
     
-    /*public void selectPagenumber(String number) {
+    public void selectPagenumber(String number) {
             clickOnElement(By.xpath("//ul[@class='page-numbers']/li/a[text()='"+number+"']"));
 
-	}*/
+	}
     
     public void selectAuthor(String name){
     	By element = By.xpath("//h3[normalize-space()='"+name+"']");
+    	
     	scrollToAElement(element);
     	waitForElementToBeClickable(element);
 		clickOnElement(element);
@@ -30,7 +30,7 @@ public class AuthorPage extends BasePage{
   }
 	
   
-	public void selectPagenumber(String number){
+	/*public void selectPagenumber(String number){
 		
 		List<WebElement> elements = getListOfElement(pageNumberList);
 	    for(int i = 0; i < elements.size(); i++) {
@@ -42,7 +42,7 @@ public class AuthorPage extends BasePage{
 	        	//System.out.println(e);
 	        }
 	    }
-	}
+	}*/
 
 
 	

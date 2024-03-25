@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testcases.TestOrder">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testProductAddedToCart"/>
+          <include name="quiteBrowser"/>
+          <include name="testOrderButton"/>
+        </methods>
+      </class> <!-- testcases.TestOrder -->
+      <class name="testcases.TestCheckout">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testOtherInformationField"/>
+          <include name="testAddressField"/>
+          <include name="testSelectDistrict"/>
+          <include name="quiteBrowser"/>
+          <include name="testEmergencyPhoneNumberField"/>
+          <include name="testSelectUpazila"/>
+          <include name="testSelectPaymentOption"/>
+        </methods>
+      </class> <!-- testcases.TestCheckout -->
+      <class name="testcases.TestAuthor">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testDisplayBooksOfAAuthor"/>
+          <include name="testNextPageNumber"/>
+          <include name="testDisplayAuthorNames"/>
+          <include name="quiteBrowser"/>
+          <include name="testRightwardArrow"/>
+        </methods>
+      </class> <!-- testcases.TestAuthor -->
+      <class name="testcases.TestLogin">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testRegisterButonIsPresent"/>
+          <include name="quiteBrowser"/>
+          <include name="testInputFieldIsPresent"/>
+        </methods>
+      </class> <!-- testcases.TestLogin -->
+      <class name="testcases.TestBooksDisplay">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testBookDescription"/>
+          <include name="testSelectABook"/>
+          <include name="quiteBrowser"/>
+          <include name="testBookNameAndPrice"/>
+          <include name="testSortingBooks"/>
+          <include name="testAuthorNameOfBook"/>
+        </methods>
+      </class> <!-- testcases.TestBooksDisplay -->
+      <class name="testcases.TestShoppingCart">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testShoppingCartButton"/>
+          <include name="testAddedProductTitle"/>
+          <include name="testCompleteTheOrderButton"/>
+          <include name="quiteBrowser"/>
+          <include name="testUpdateQuantity"/>
+          <include name="testUpdatedTotalPrice"/>
+        </methods>
+      </class> <!-- testcases.TestShoppingCart -->
+      <class name="testcases.TestMyAccount">
+        <methods>
+          <include name="openABrowser"/>
+          <include name="testMyAccountOption"/>
+          <include name="quiteBrowser"/>
+          <include name="testLogout"/>
+        </methods>
+      </class> <!-- testcases.TestMyAccount -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

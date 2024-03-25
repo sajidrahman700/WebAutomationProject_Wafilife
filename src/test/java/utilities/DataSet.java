@@ -54,12 +54,12 @@ public class DataSet {
 	 public static Object invalidCredentialsForLogin(){
 		 
 		LoginPage loginPage = new LoginPage();
-        Object[][] data = {{"tutt@gh.com", "12", loginPage.passwordIncorrectErrorMessage},//LoginWithInvalidPassword
-               {"tghfh@gh.com", "ad", loginPage.usernameincorrectErrorMessage},//LoginWithInvalidEmail
-               {"tghfh@gh.com", "12", loginPage.usernameincorrectErrorMessage},//LoginWithInvalidEmailPassword
-               {"","ad", loginPage.usernameEmptyErrorMessage},//LoginWithoutEmail
-               {"tghfh@gh.com", "", loginPage.passwordEmptyErrorMessage},//LoginWithoutPassword
-               {"", "", loginPage.usernameEmptyErrorMessage}//LoginWithoutEmailPassword
+        Object[][] data = {{"", "ad", loginPage.usernameEmptyErrorMessage},//LoginWithInvalidPassword
+               {"tutt@gh.com", "", loginPage.passwordEmptyErrorMessage},//LoginWithInvalidEmail
+               {"", "", loginPage.usernameEmptyErrorMessage},//LoginWithInvalidEmailPassword
+               {"tghfh@gh.com","ad", loginPage.usernameincorrectErrorMessage},//LoginWithoutEmail
+               {"tutt@gh.com", "123", loginPage.passwordIncorrectErrorMessage},//LoginWithoutPassword
+               {"tghkl@gh.com", "321", loginPage.usernameincorrectErrorMessage}//LoginWithoutEmailPassword
            };
 
        return data;

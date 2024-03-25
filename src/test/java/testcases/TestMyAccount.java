@@ -17,7 +17,7 @@ public class TestMyAccount extends DriverSetup {
 	LoginPage loginPage = new LoginPage();
 	MyAccountPage myAccountPage = new MyAccountPage();
 	
-	@Test
+	@Test(priority = 0, description = "Verify that the My account option is clickable", dependsOnGroups = "checkout")
 	public void testMyAccountOption() {
 		myAccountPage.loadAWebPage(homePage.homePageURL);
 		
@@ -39,7 +39,7 @@ public class TestMyAccount extends DriverSetup {
 	}
 	
 	
-	@Test(dependsOnMethods = "testMyAccountOption")
+	@Test(dependsOnMethods = "testMyAccountOption", priority = 1, description = "Verify that the user can log out by clicking the Logout option")
 	public void testLogout() {
 		myAccountPage.clickOnElement(myAccountPage.logout);
 		Assert.assertTrue(loginPage.getElement(loginPage.loginButton).isDisplayed());

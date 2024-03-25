@@ -15,8 +15,8 @@ public class HomePage extends BasePage {
 	public By carouselBanner_2nd = By.xpath("//div[@class='owl-stage']/div[6]/a[contains(@href,\"https://www.wafilife.com\" )]");
 	public By carouselBanner_3rd = By.xpath("//div[@class='owl-stage']/div[3]/a[contains(@href,\"https://www.wafilife.com\" )]");
 	
-	public By newPublishedBooks_feature = By.xpath("//div[@id='featured_product_slider_wrapper_372855925']");
-	public By preOrderBooks_feature = By.xpath("//div[@id='featured_product_slider_wrapper_2039621852']");
+	public By newPublishedBooks_feature = By.xpath("//h3[contains(text(),'নতুন প্রকাশিত বই')]");
+	public By preOrderBooks_feature = By.xpath("//h3[contains(text(),'প্রি-অর্ডারের বই')]");
 	
 	
 	
