@@ -39,3 +39,26 @@
 ### MyAccount TestCase
 ![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/72bc2638-74e3-449c-b66b-ad9922b047af)
 
+
+
+# Test Register Feature
+## Overview
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/88718e6f-a738-47f9-ae06-645337387abf)
+
+## Graphs
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/e63f3d17-8ce2-44fd-8625-e617d664abd3)
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/806dc1d8-d627-4e86-8aca-78021255421c)
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/479e11dc-2274-422e-8569-02e9871c78d2)
+
+
+## Test Cases
+```
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/17ea3530-3077-4972-b6a4-2ac2de442580)
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/82262364-25d1-4126-845c-92155f012aae)
+```
+
+```
+
+```
+
+
