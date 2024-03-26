@@ -10,5 +10,32 @@
 ![Screenshot 2024-03-26 120227](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/6e1bbcf2-8526-4920-959c-75699a50d0f4)
 ![Screenshot 2024-03-26 120302](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/fcb61a3f-f220-42dd-b0dd-fd36d7bc4445)
 
+
 ## Test
 ### HomePage TestCase
+![Screenshot 2024-03-26 120740](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/6c589e20-b282-4905-a851-fbcd936efef2)
+
+### Header TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/b01bd7f5-c1b6-4281-ad09-10995b6b7f86)
+
+### Login TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/127bb967-4c78-4267-8750-955c902d2fa6)
+
+### Author TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/768e3926-d524-4b2e-8f51-feda03459e69)
+
+### BookDisplay TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/b7770fa5-320d-4b5e-829a-86b760d9cffc)
+
+### Order TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/1bb80308-ccfd-408c-b016-9caadd45bc41)
+
+### ShoppingCart TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/e3e03a33-becf-47d8-84e5-0dce1c7eea78)
+
+### Checkout TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/4079f9bb-2992-49cf-9299-3c4317c18742)
+
+### MyAccount TestCase
+![image](https://github.com/sajidrahman700/WebAutomationProject_Wafilife/assets/127319733/72bc2638-74e3-449c-b66b-ad9922b047af)
+
