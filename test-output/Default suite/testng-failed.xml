@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TestHeader">
+      <class name="testcases.TestLogin">
         <methods>
           <include name="openABrowser"/>
-          <include name="testOpenLoginAndRegisterPage"/>
+          <include name="testLoginWithInvalidCredentials" invocation-numbers="5"/>
           <include name="quiteBrowser"/>
-          <include name="testDisplaySearchBar"/>
-          <include name="testOpenAMenu"/>
-          <include name="testLogoFunctionality"/>
-          <include name="testDisplayMenuBar"/>
-          <include name="testDisplayLoginRegister"/>
         </methods>
-      </class> <!-- testcases.TestHeader -->
-      <class name="testcases.TestHomePage">
-        <methods>
-          <include name="openABrowser"/>
-          <include name="testDisplayFeatureBooks"/>
-          <include name="quiteBrowser"/>
-          <include name="testOpenCarouselBanner"/>
-        </methods>
-      </class> <!-- testcases.TestHomePage -->
+      </class> <!-- testcases.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

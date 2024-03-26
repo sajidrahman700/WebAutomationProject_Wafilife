@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="84.157" tests="44" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="101.14" tests="44" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire3326037720048523339\surefirebooter-20240325175303400_3.jar C:\Users\User\AppData\Local\Temp\surefire3326037720048523339 2024-03-25T17-53-03_273-jvmRun1 surefire-20240325175303400_1tmp surefire_0-20240325175303400_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire12276010097968078846\surefirebooter-20240326200637679_3.jar C:\Users\User\AppData\Local\Temp\surefire12276010097968078846 2024-03-26T20-06-37_536-jvmRun1 surefire-20240326200637679_1tmp surefire_0-20240326200637679_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\SQA\Practice\Project\WebAutomationProject_Wafilife\target\test-classes;D:\SQA\Practice\Project\WebAutomationProject_Wafilife\target\classes;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\User\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\User\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire3326037720048523339\surefirebooter-20240325175303400_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire12276010097968078846\surefirebooter-20240326200637679_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.1+9-29"/>
@@ -58,55 +58,55 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testDisplayFeatureBooks" classname="testcases.TestHomePage" time="5.196">
+  <testcase name="testDisplayFeatureBooks" classname="testcases.TestHomePage" time="4.788">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Mar 25, 2024 5:53:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 120; Please update to a Selenium version that supports CDP version 122
+Mar 26, 2024 8:06:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 123, returning the closest version; found: 120; Please update to a Selenium version that supports CDP version 123
 ]]></system-err>
   </testcase>
-  <testcase name="testDisplayCarouselBanner" classname="testcases.TestHomePage" time="0.2"/>
-  <testcase name="testOpenCarouselBanner" classname="testcases.TestHomePage" time="2.63"/>
-  <testcase name="testDisplayLogo" classname="testcases.TestHeader" time="0.062"/>
-  <testcase name="testDisplayLoginRegister" classname="testcases.TestHeader" time="1.434"/>
-  <testcase name="testDisplayMenuBar" classname="testcases.TestHeader" time="0.05"/>
-  <testcase name="testDisplaySearchBar" classname="testcases.TestHeader" time="0.05"/>
-  <testcase name="testOpenAMenu" classname="testcases.TestHeader" time="2.87"/>
-  <testcase name="testLogoFunctionality" classname="testcases.TestHeader" time="2.935"/>
-  <testcase name="testOpenLoginAndRegisterPage" classname="testcases.TestHeader" time="2.81"/>
-  <testcase name="testloginPagetitle" classname="testcases.TestLogin" time="1.638"/>
-  <testcase name="testInputFieldIsPresent" classname="testcases.TestLogin" time="0.042"/>
-  <testcase name="testRegisterButonIsPresent" classname="testcases.TestLogin" time="0.015"/>
-  <testcase name="testLoginWithInvalidCredentials[, ad, Error: ইউজার নাম প্রয়োজন](1)" classname="testcases.TestLogin" time="3.637"/>
-  <testcase name="testLoginWithInvalidCredentials[tutt@gh.com, , Error: The password field is empty.](2)" classname="testcases.TestLogin" time="3.42"/>
-  <testcase name="testLoginWithInvalidCredentials[, , Error: ইউজার নাম প্রয়োজন](3)" classname="testcases.TestLogin" time="3.645"/>
-  <testcase name="testLoginWithInvalidCredentials[tghfh@gh.com, ad, Unknown email address. Check again or try your username.](4)" classname="testcases.TestLogin" time="3.495"/>
-  <testcase name="testLoginWithInvalidCredentials[tutt@gh.com, 123, Error: The password you entered for the email address tutt@gh.com is incorrect. Lost your password?](5)" classname="testcases.TestLogin" time="3.756"/>
-  <testcase name="testLoginWithInvalidCredentials[tghkl@gh.com, 321, Unknown email address. Check again or try your username.](6)" classname="testcases.TestLogin" time="4.118"/>
-  <testcase name="testLoginWithValidCredentials" classname="testcases.TestLogin" time="3.737"/>
-  <testcase name="testDisplayAuthorNames" classname="testcases.TestAuthor" time="0.918"/>
-  <testcase name="testNextPageNumber" classname="testcases.TestAuthor" time="1.924"/>
-  <testcase name="testRightwardArrow" classname="testcases.TestAuthor" time="1.683"/>
-  <testcase name="testDisplayBooksOfAAuthor" classname="testcases.TestAuthor" time="0.831"/>
-  <testcase name="testBookNameAndPrice" classname="testcases.TestBooksDisplay" time="0.052"/>
-  <testcase name="testAuthorNameOfBook" classname="testcases.TestBooksDisplay" time="0.012"/>
-  <testcase name="testSortingBooks" classname="testcases.TestBooksDisplay" time="0.45"/>
-  <testcase name="testSelectABook" classname="testcases.TestBooksDisplay" time="2.302"/>
-  <testcase name="testBookDescription" classname="testcases.TestBooksDisplay" time="0.134"/>
-  <testcase name="testOrderButton" classname="testcases.TestOrder" time="0.051"/>
-  <testcase name="testProductAddedToCart" classname="testcases.TestOrder" time="2.267"/>
-  <testcase name="testShoppingCartButton" classname="testcases.TestShoppingCart" time="3.812"/>
+  <testcase name="testDisplayCarouselBanner" classname="testcases.TestHomePage" time="0.251"/>
+  <testcase name="testOpenCarouselBanner" classname="testcases.TestHomePage" time="3.38"/>
+  <testcase name="testDisplayLogo" classname="testcases.TestHeader" time="0.204"/>
+  <testcase name="testDisplayLoginRegister" classname="testcases.TestHeader" time="1.363"/>
+  <testcase name="testDisplayMenuBar" classname="testcases.TestHeader" time="0.044"/>
+  <testcase name="testDisplaySearchBar" classname="testcases.TestHeader" time="0.042"/>
+  <testcase name="testOpenAMenu" classname="testcases.TestHeader" time="2.902"/>
+  <testcase name="testLogoFunctionality" classname="testcases.TestHeader" time="2.65"/>
+  <testcase name="testOpenLoginAndRegisterPage" classname="testcases.TestHeader" time="2.084"/>
+  <testcase name="testloginPagetitle" classname="testcases.TestLogin" time="1.425"/>
+  <testcase name="testInputFieldIsPresent" classname="testcases.TestLogin" time="0.162"/>
+  <testcase name="testRegisterButonIsPresent" classname="testcases.TestLogin" time="0.058"/>
+  <testcase name="testLoginWithInvalidCredentials[, ad, Error: ইউজার নাম প্রয়োজন](1)" classname="testcases.TestLogin" time="3.196"/>
+  <testcase name="testLoginWithInvalidCredentials[tutt@gh.com, , Error: The password field is empty.](2)" classname="testcases.TestLogin" time="2.927"/>
+  <testcase name="testLoginWithInvalidCredentials[, , Error: ইউজার নাম প্রয়োজন](3)" classname="testcases.TestLogin" time="2.91"/>
+  <testcase name="testLoginWithInvalidCredentials[tghfh@gh.com, ad, Unknown email address. Check again or try your username.](4)" classname="testcases.TestLogin" time="3.458"/>
+  <testcase name="testLoginWithInvalidCredentials[tutt@gh.com, 123, Error: The password you entered for the email address tutt@gh.com is incorrect. Lost your password?](5)" classname="testcases.TestLogin" time="3.257"/>
+  <testcase name="testLoginWithInvalidCredentials[tghkl@gh.com, 321, Unknown email address. Check again or try your username.](6)" classname="testcases.TestLogin" time="3.411"/>
+  <testcase name="testLoginWithValidCredentials" classname="testcases.TestLogin" time="3.882"/>
+  <testcase name="testDisplayAuthorNames" classname="testcases.TestAuthor" time="0.937"/>
+  <testcase name="testNextPageNumber" classname="testcases.TestAuthor" time="4.981"/>
+  <testcase name="testRightwardArrow" classname="testcases.TestAuthor" time="1.654"/>
+  <testcase name="testDisplayBooksOfAAuthor" classname="testcases.TestAuthor" time="1.479"/>
+  <testcase name="testBookNameAndPrice" classname="testcases.TestBooksDisplay" time="0.047"/>
+  <testcase name="testAuthorNameOfBook" classname="testcases.TestBooksDisplay" time="0.034"/>
+  <testcase name="testSortingBooks" classname="testcases.TestBooksDisplay" time="0.449"/>
+  <testcase name="testSelectABook" classname="testcases.TestBooksDisplay" time="2.994"/>
+  <testcase name="testBookDescription" classname="testcases.TestBooksDisplay" time="0.123"/>
+  <testcase name="testOrderButton" classname="testcases.TestOrder" time="0.06"/>
+  <testcase name="testProductAddedToCart" classname="testcases.TestOrder" time="1.815"/>
+  <testcase name="testShoppingCartButton" classname="testcases.TestShoppingCart" time="3.047"/>
   <testcase name="testAddedProductTitle" classname="testcases.TestShoppingCart" time="0.022"/>
-  <testcase name="testUpdateQuantity" classname="testcases.TestShoppingCart" time="0.249"/>
-  <testcase name="testUpdatedTotalPrice" classname="testcases.TestShoppingCart" time="5.069"/>
-  <testcase name="testCompleteTheOrderButton" classname="testcases.TestShoppingCart" time="2.895"/>
-  <testcase name="testEmergencyPhoneNumberField" classname="testcases.TestCheckout" time="0.115"/>
-  <testcase name="testSelectDistrict" classname="testcases.TestCheckout" time="0.392"/>
-  <testcase name="testSelectUpazila" classname="testcases.TestCheckout" time="1.486"/>
-  <testcase name="testAddressField" classname="testcases.TestCheckout" time="0.124"/>
-  <testcase name="testOtherInformationField" classname="testcases.TestCheckout" time="0.1"/>
-  <testcase name="testSelectPaymentOption" classname="testcases.TestCheckout" time="2.179"/>
-  <testcase name="testMyAccountOption" classname="testcases.TestMyAccount" time="3.625"/>
-  <testcase name="testLogout" classname="testcases.TestMyAccount" time="3.87"/>
+  <testcase name="testUpdateQuantity" classname="testcases.TestShoppingCart" time="0.279"/>
+  <testcase name="testUpdatedTotalPrice" classname="testcases.TestShoppingCart" time="5.041"/>
+  <testcase name="testCompleteTheOrderButton" classname="testcases.TestShoppingCart" time="2.197"/>
+  <testcase name="testEmergencyPhoneNumberField" classname="testcases.TestCheckout" time="0.145"/>
+  <testcase name="testSelectDistrict" classname="testcases.TestCheckout" time="0.353"/>
+  <testcase name="testSelectUpazila" classname="testcases.TestCheckout" time="3.646"/>
+  <testcase name="testAddressField" classname="testcases.TestCheckout" time="0.134"/>
+  <testcase name="testOtherInformationField" classname="testcases.TestCheckout" time="0.101"/>
+  <testcase name="testSelectPaymentOption" classname="testcases.TestCheckout" time="2.148"/>
+  <testcase name="testMyAccountOption" classname="testcases.TestMyAccount" time="5.772"/>
+  <testcase name="testLogout" classname="testcases.TestMyAccount" time="6.655"/>
 </testsuite>

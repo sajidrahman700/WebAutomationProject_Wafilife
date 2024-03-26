@@ -3,6 +3,8 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pages.HeaderPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -44,6 +46,7 @@ public class TestLogin extends DriverSetup {
 	}
 	
 	@Test(dataProvider = "invalidUserDataForLogin", dataProviderClass = DataSet.class, priority = 3, description = "Verify Login with invalid credentials",dependsOnMethods = "testloginPagetitle")
+	@Severity(SeverityLevel.CRITICAL)
 	public void testLoginWithInvalidCredentials(String userName, String password, String displayErrorMsg) {
 		loginPage.doLogin(userName, password);
 		Assert.assertTrue(loginPage.getElement(loginPage.errorMessageField).isDisplayed());
@@ -51,7 +54,9 @@ public class TestLogin extends DriverSetup {
 			
 	}
 	
+	
 	@Test(priority = 4, description = "Verify that successfully login after clicking the Login button with a valid credential",groups = "login",dependsOnMethods = "testloginPagetitle")
+	@Severity(SeverityLevel.CRITICAL)
 	public void testLoginWithValidCredentials() {
 		loginPage.doLogin("tutt@gh.com", "ad");
 		Assert.assertTrue(myAccountPage.getElement(myAccountPage.dashBoard).isEnabled());

@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="44" passed="44" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T17:53:06 BDT" name="Suite" finished-at="2024-03-25T17:54:27 BDT" duration-ms="80414">
+  <suite started-at="2024-03-26T20:06:51 BDT" name="Suite" finished-at="2024-03-26T20:08:18 BDT" duration-ms="86633">
     <groups>
       <group name="SelectBook">
-        <method signature="TestBooksDisplay.testBookDescription()[pri:4, instance:testcases.TestBooksDisplay@5890e879]" name="testBookDescription" class="testcases.TestBooksDisplay"/>
+        <method signature="TestBooksDisplay.testBookDescription()[pri:4, instance:testcases.TestBooksDisplay@2b40ff9c]" name="testBookDescription" class="testcases.TestBooksDisplay"/>
       </group> <!-- SelectBook -->
       <group name="ShoppingCart">
-        <method signature="TestShoppingCart.testCompleteTheOrderButton()[pri:4, instance:testcases.TestShoppingCart@7c137fd5]" name="testCompleteTheOrderButton" class="testcases.TestShoppingCart"/>
+        <method signature="TestShoppingCart.testCompleteTheOrderButton()[pri:4, instance:testcases.TestShoppingCart@24569dba]" name="testCompleteTheOrderButton" class="testcases.TestShoppingCart"/>
       </group> <!-- ShoppingCart -->
       <group name="AuthorBook">
-        <method signature="TestAuthor.testDisplayBooksOfAAuthor()[pri:3, instance:testcases.TestAuthor@6c284af]" name="testDisplayBooksOfAAuthor" class="testcases.TestAuthor"/>
+        <method signature="TestAuthor.testDisplayBooksOfAAuthor()[pri:3, instance:testcases.TestAuthor@451001e5]" name="testDisplayBooksOfAAuthor" class="testcases.TestAuthor"/>
       </group> <!-- AuthorBook -->
       <group name="header">
-        <method signature="TestHeader.testOpenLoginAndRegisterPage()[pri:6, instance:testcases.TestHeader@7ce69770]" name="testOpenLoginAndRegisterPage" class="testcases.TestHeader"/>
+        <method signature="TestHeader.testOpenLoginAndRegisterPage()[pri:6, instance:testcases.TestHeader@31ea9581]" name="testOpenLoginAndRegisterPage" class="testcases.TestHeader"/>
       </group> <!-- header -->
       <group name="login">
-        <method signature="TestLogin.testLoginWithValidCredentials()[pri:4, instance:testcases.TestLogin@268f106e]" name="testLoginWithValidCredentials" class="testcases.TestLogin"/>
+        <method signature="TestLogin.testLoginWithValidCredentials()[pri:4, instance:testcases.TestLogin@183ec003]" name="testLoginWithValidCredentials" class="testcases.TestLogin"/>
       </group> <!-- login -->
       <group name="checkout">
-        <method signature="TestCheckout.testSelectPaymentOption()[pri:5, instance:testcases.TestCheckout@183ec003]" name="testSelectPaymentOption" class="testcases.TestCheckout"/>
+        <method signature="TestCheckout.testSelectPaymentOption()[pri:5, instance:testcases.TestCheckout@5ddeb7cb]" name="testSelectPaymentOption" class="testcases.TestCheckout"/>
       </group> <!-- checkout -->
       <group name="homepage">
-        <method signature="TestHomePage.testOpenCarouselBanner()[pri:2, instance:testcases.TestHomePage@57a78e3]" name="testOpenCarouselBanner" class="testcases.TestHomePage"/>
+        <method signature="TestHomePage.testOpenCarouselBanner()[pri:2, instance:testcases.TestHomePage@7ce026d3]" name="testOpenCarouselBanner" class="testcases.TestHomePage"/>
       </group> <!-- homepage -->
       <group name="order">
-        <method signature="TestOrder.testProductAddedToCart()[pri:1, instance:testcases.TestOrder@31ea9581]" name="testProductAddedToCart" class="testcases.TestOrder"/>
+        <method signature="TestOrder.testProductAddedToCart()[pri:1, instance:testcases.TestOrder@4d1c005e]" name="testProductAddedToCart" class="testcases.TestOrder"/>
       </group> <!-- order -->
     </groups>
-    <test started-at="2024-03-25T17:53:06 BDT" name="Test" finished-at="2024-03-25T17:54:27 BDT" duration-ms="80414">
+    <test started-at="2024-03-26T20:06:51 BDT" name="Test" finished-at="2024-03-26T20:08:18 BDT" duration-ms="86633">
       <class name="testcases.TestLogin">
-        <test-method signature="testloginPagetitle()[pri:0, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:25 BDT" name="testloginPagetitle" description="Verify the login page title" depends-on-groups="header" finished-at="2024-03-25T17:53:26 BDT" duration-ms="1638" status="PASS">
+        <test-method signature="testloginPagetitle()[pri:0, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:09 BDT" name="testloginPagetitle" description="Verify the login page title" depends-on-groups="header" finished-at="2024-03-26T20:07:11 BDT" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testloginPagetitle -->
-        <test-method signature="testInputFieldIsPresent()[pri:1, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:26 BDT" name="testInputFieldIsPresent" description="Verify that all required fields are present in the login section" finished-at="2024-03-25T17:53:26 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="41" status="PASS">
+        <test-method signature="testInputFieldIsPresent()[pri:1, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:11 BDT" name="testInputFieldIsPresent" description="Verify that all required fields are present in the login section" finished-at="2024-03-26T20:07:11 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInputFieldIsPresent -->
-        <test-method signature="testRegisterButonIsPresent()[pri:2, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:26 BDT" name="testRegisterButonIsPresent" description="Verify that the Login button is present" finished-at="2024-03-25T17:53:26 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="15" status="PASS">
+        <test-method signature="testRegisterButonIsPresent()[pri:2, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:11 BDT" name="testRegisterButonIsPresent" description="Verify that the Login button is present" finished-at="2024-03-26T20:07:11 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterButonIsPresent -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:26 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:30 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3631" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:11 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:14 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:30 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:34 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3420" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:14 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:17 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="2926" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:34 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:37 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3644" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:17 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:20 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="2909" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:37 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:41 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3495" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:20 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:23 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:41 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:44 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3756" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:23 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:27 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:44 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-25T17:53:49 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="4118" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:27 BDT" name="testLoginWithInvalidCredentials" description="Verify Login with invalid credentials" data-provider="invalidUserDataForLogin" finished-at="2024-03-26T20:07:30 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,167 +169,167 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method signature="testLoginWithValidCredentials()[pri:4, instance:testcases.TestLogin@268f106e]" started-at="2024-03-25T17:53:49 BDT" name="testLoginWithValidCredentials" description="Verify that successfully login after clicking the Login button with a valid credential" finished-at="2024-03-25T17:53:52 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3738" status="PASS">
+        <test-method signature="testLoginWithValidCredentials()[pri:4, instance:testcases.TestLogin@183ec003]" started-at="2024-03-26T20:07:30 BDT" name="testLoginWithValidCredentials" description="Verify that successfully login after clicking the Login button with a valid credential" finished-at="2024-03-26T20:07:34 BDT" depends-on-methods="testcases.TestLogin.testloginPagetitle" duration-ms="3883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentials -->
       </class> <!-- testcases.TestLogin -->
       <class name="testcases.TestBooksDisplay">
-        <test-method signature="testBookNameAndPrice()[pri:0, instance:testcases.TestBooksDisplay@5890e879]" started-at="2024-03-25T17:53:58 BDT" name="testBookNameAndPrice" description="Verify that the book&#039;s name and price are correctly displayed" depends-on-groups="AuthorBook" finished-at="2024-03-25T17:53:58 BDT" duration-ms="51" status="PASS">
+        <test-method signature="testBookNameAndPrice()[pri:0, instance:testcases.TestBooksDisplay@2b40ff9c]" started-at="2024-03-26T20:07:43 BDT" name="testBookNameAndPrice" description="Verify that the book&#039;s name and price are correctly displayed" depends-on-groups="AuthorBook" finished-at="2024-03-26T20:07:43 BDT" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBookNameAndPrice -->
-        <test-method signature="testAuthorNameOfBook()[pri:1, instance:testcases.TestBooksDisplay@5890e879]" started-at="2024-03-25T17:53:58 BDT" name="testAuthorNameOfBook" description="Verify that the book&#039;s author name is correctly displayed" finished-at="2024-03-25T17:53:58 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="13" status="PASS">
+        <test-method signature="testAuthorNameOfBook()[pri:1, instance:testcases.TestBooksDisplay@2b40ff9c]" started-at="2024-03-26T20:07:43 BDT" name="testAuthorNameOfBook" description="Verify that the book&#039;s author name is correctly displayed" finished-at="2024-03-26T20:07:43 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthorNameOfBook -->
-        <test-method signature="testSortingBooks()[pri:2, instance:testcases.TestBooksDisplay@5890e879]" started-at="2024-03-25T17:53:58 BDT" name="testSortingBooks" description="Verify that the user can sort the books by More relevant, Discount, and Price" finished-at="2024-03-25T17:53:58 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="450" status="PASS">
+        <test-method signature="testSortingBooks()[pri:2, instance:testcases.TestBooksDisplay@2b40ff9c]" started-at="2024-03-26T20:07:43 BDT" name="testSortingBooks" description="Verify that the user can sort the books by More relevant, Discount, and Price" finished-at="2024-03-26T20:07:44 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortingBooks -->
-        <test-method signature="testSelectABook()[pri:3, instance:testcases.TestBooksDisplay@5890e879]" started-at="2024-03-25T17:53:58 BDT" name="testSelectABook" description="Verify that all the books that are shown are clickable" finished-at="2024-03-25T17:54:01 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="2302" status="PASS">
+        <test-method signature="testSelectABook()[pri:3, instance:testcases.TestBooksDisplay@2b40ff9c]" started-at="2024-03-26T20:07:44 BDT" name="testSelectABook" description="Verify that all the books that are shown are clickable" finished-at="2024-03-26T20:07:47 BDT" depends-on-methods="testcases.TestBooksDisplay.testBookNameAndPrice" duration-ms="2980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectABook -->
-        <test-method signature="testBookDescription()[pri:4, instance:testcases.TestBooksDisplay@5890e879]" started-at="2024-03-25T17:54:01 BDT" name="testBookDescription" description="Verify the selected book&#039;s descriptions" finished-at="2024-03-25T17:54:01 BDT" depends-on-methods="testcases.TestBooksDisplay.testSelectABook" duration-ms="134" status="PASS">
+        <test-method signature="testBookDescription()[pri:4, instance:testcases.TestBooksDisplay@2b40ff9c]" started-at="2024-03-26T20:07:47 BDT" name="testBookDescription" description="Verify the selected book&#039;s descriptions" finished-at="2024-03-26T20:07:47 BDT" depends-on-methods="testcases.TestBooksDisplay.testSelectABook" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBookDescription -->
       </class> <!-- testcases.TestBooksDisplay -->
       <class name="testcases.TestShoppingCart">
-        <test-method signature="testShoppingCartButton()[pri:0, instance:testcases.TestShoppingCart@7c137fd5]" started-at="2024-03-25T17:54:03 BDT" name="testShoppingCartButton" description="Verify that the shopping cart button is clickable" depends-on-groups="order" finished-at="2024-03-25T17:54:07 BDT" duration-ms="3812" status="PASS">
+        <test-method signature="testShoppingCartButton()[pri:0, instance:testcases.TestShoppingCart@24569dba]" started-at="2024-03-26T20:07:49 BDT" name="testShoppingCartButton" description="Verify that the shopping cart button is clickable" depends-on-groups="order" finished-at="2024-03-26T20:07:52 BDT" duration-ms="3046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testShoppingCartButton -->
-        <test-method signature="testAddedProductTitle()[pri:1, instance:testcases.TestShoppingCart@7c137fd5]" started-at="2024-03-25T17:54:07 BDT" name="testAddedProductTitle" description="Verify that the item in the shopping cart displays the correct information" finished-at="2024-03-25T17:54:07 BDT" depends-on-methods="testcases.TestShoppingCart.testShoppingCartButton" duration-ms="21" status="PASS">
+        <test-method signature="testAddedProductTitle()[pri:1, instance:testcases.TestShoppingCart@24569dba]" started-at="2024-03-26T20:07:52 BDT" name="testAddedProductTitle" description="Verify that the item in the shopping cart displays the correct information" finished-at="2024-03-26T20:07:52 BDT" depends-on-methods="testcases.TestShoppingCart.testShoppingCartButton" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddedProductTitle -->
-        <test-method signature="testUpdateQuantity()[pri:2, instance:testcases.TestShoppingCart@7c137fd5]" started-at="2024-03-25T17:54:07 BDT" name="testUpdateQuantity" description="Verify that users can change the quantity of items in the cart" finished-at="2024-03-25T17:54:07 BDT" depends-on-methods="testcases.TestShoppingCart.testShoppingCartButton" duration-ms="250" status="PASS">
+        <test-method signature="testUpdateQuantity()[pri:2, instance:testcases.TestShoppingCart@24569dba]" started-at="2024-03-26T20:07:52 BDT" name="testUpdateQuantity" description="Verify that users can change the quantity of items in the cart" finished-at="2024-03-26T20:07:52 BDT" depends-on-methods="testcases.TestShoppingCart.testShoppingCartButton" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateQuantity -->
-        <test-method signature="testUpdatedTotalPrice()[pri:3, instance:testcases.TestShoppingCart@7c137fd5]" started-at="2024-03-25T17:54:07 BDT" name="testUpdatedTotalPrice" description="Verify that the total price is updated accordingly" finished-at="2024-03-25T17:54:12 BDT" depends-on-methods="testcases.TestShoppingCart.testUpdateQuantity" duration-ms="5069" status="PASS">
+        <test-method signature="testUpdatedTotalPrice()[pri:3, instance:testcases.TestShoppingCart@24569dba]" started-at="2024-03-26T20:07:52 BDT" name="testUpdatedTotalPrice" description="Verify that the total price is updated accordingly" finished-at="2024-03-26T20:07:57 BDT" depends-on-methods="testcases.TestShoppingCart.testUpdateQuantity" duration-ms="5041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatedTotalPrice -->
-        <test-method signature="testCompleteTheOrderButton()[pri:4, instance:testcases.TestShoppingCart@7c137fd5]" started-at="2024-03-25T17:54:12 BDT" name="testCompleteTheOrderButton" description="Verify that open a checkout page after clicking the Complete the order button" finished-at="2024-03-25T17:54:15 BDT" depends-on-methods="testcases.TestShoppingCart.testUpdatedTotalPrice" duration-ms="2895" status="PASS">
+        <test-method signature="testCompleteTheOrderButton()[pri:4, instance:testcases.TestShoppingCart@24569dba]" started-at="2024-03-26T20:07:57 BDT" name="testCompleteTheOrderButton" description="Verify that open a checkout page after clicking the Complete the order button" finished-at="2024-03-26T20:07:59 BDT" depends-on-methods="testcases.TestShoppingCart.testUpdatedTotalPrice" duration-ms="2196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompleteTheOrderButton -->
       </class> <!-- testcases.TestShoppingCart -->
       <class name="testcases.TestAuthor">
-        <test-method signature="testDisplayAuthorNames()[pri:0, instance:testcases.TestAuthor@6c284af]" started-at="2024-03-25T17:53:52 BDT" name="testDisplayAuthorNames" description="Verify that displays a list of author names after clicking the Author option" depends-on-groups="login" finished-at="2024-03-25T17:53:53 BDT" duration-ms="918" status="PASS">
+        <test-method signature="testDisplayAuthorNames()[pri:0, instance:testcases.TestAuthor@451001e5]" started-at="2024-03-26T20:07:34 BDT" name="testDisplayAuthorNames" description="Verify that displays a list of author names after clicking the Author option" depends-on-groups="login" finished-at="2024-03-26T20:07:35 BDT" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayAuthorNames -->
-        <test-method signature="testNextPageNumber()[pri:1, instance:testcases.TestAuthor@6c284af]" started-at="2024-03-25T17:53:53 BDT" name="testNextPageNumber" description="Verify the next page number option" finished-at="2024-03-25T17:53:55 BDT" depends-on-methods="testcases.TestAuthor.testDisplayAuthorNames" duration-ms="1922" status="PASS">
+        <test-method signature="testNextPageNumber()[pri:1, instance:testcases.TestAuthor@451001e5]" started-at="2024-03-26T20:07:35 BDT" name="testNextPageNumber" description="Verify the next page number option" finished-at="2024-03-26T20:07:40 BDT" depends-on-methods="testcases.TestAuthor.testDisplayAuthorNames" duration-ms="4977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNextPageNumber -->
-        <test-method signature="testRightwardArrow()[pri:2, instance:testcases.TestAuthor@6c284af]" started-at="2024-03-25T17:53:55 BDT" name="testRightwardArrow" description="Verify the Rightward Arrow option" finished-at="2024-03-25T17:53:57 BDT" depends-on-methods="testcases.TestAuthor.testNextPageNumber" duration-ms="1684" status="PASS">
+        <test-method signature="testRightwardArrow()[pri:2, instance:testcases.TestAuthor@451001e5]" started-at="2024-03-26T20:07:40 BDT" name="testRightwardArrow" description="Verify the Rightward Arrow option" finished-at="2024-03-26T20:07:42 BDT" depends-on-methods="testcases.TestAuthor.testNextPageNumber" duration-ms="1653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRightwardArrow -->
-        <test-method signature="testDisplayBooksOfAAuthor()[pri:3, instance:testcases.TestAuthor@6c284af]" started-at="2024-03-25T17:53:57 BDT" name="testDisplayBooksOfAAuthor" description="Verify that the author&#039;s all books are displayed after clicking the author&#039;s name" finished-at="2024-03-25T17:53:58 BDT" depends-on-methods="testcases.TestAuthor.testRightwardArrow" duration-ms="831" status="PASS">
+        <test-method signature="testDisplayBooksOfAAuthor()[pri:3, instance:testcases.TestAuthor@451001e5]" started-at="2024-03-26T20:07:42 BDT" name="testDisplayBooksOfAAuthor" description="Verify that the author&#039;s all books are displayed after clicking the author&#039;s name" finished-at="2024-03-26T20:07:43 BDT" depends-on-methods="testcases.TestAuthor.testRightwardArrow" duration-ms="1477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayBooksOfAAuthor -->
       </class> <!-- testcases.TestAuthor -->
       <class name="testcases.TestOrder">
-        <test-method signature="testOrderButton()[pri:0, instance:testcases.TestOrder@31ea9581]" started-at="2024-03-25T17:54:01 BDT" name="testOrderButton" description="Verify that the Order button is Clickable" depends-on-groups="SelectBook" finished-at="2024-03-25T17:54:01 BDT" duration-ms="51" status="PASS">
+        <test-method signature="testOrderButton()[pri:0, instance:testcases.TestOrder@4d1c005e]" started-at="2024-03-26T20:07:47 BDT" name="testOrderButton" description="Verify that the Order button is Clickable" depends-on-groups="SelectBook" finished-at="2024-03-26T20:07:47 BDT" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrderButton -->
-        <test-method signature="testProductAddedToCart()[pri:1, instance:testcases.TestOrder@31ea9581]" started-at="2024-03-25T17:54:01 BDT" name="testProductAddedToCart" description="Verify that a product is added to the cart after clicking the Order button" depends-on-groups="SelectBook" finished-at="2024-03-25T17:54:03 BDT" duration-ms="2267" status="PASS">
+        <test-method signature="testProductAddedToCart()[pri:1, instance:testcases.TestOrder@4d1c005e]" started-at="2024-03-26T20:07:47 BDT" name="testProductAddedToCart" description="Verify that a product is added to the cart after clicking the Order button" depends-on-groups="SelectBook" finished-at="2024-03-26T20:07:49 BDT" duration-ms="1816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductAddedToCart -->
       </class> <!-- testcases.TestOrder -->
       <class name="testcases.TestCheckout">
-        <test-method signature="testEmergencyPhoneNumberField()[pri:0, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:15 BDT" name="testEmergencyPhoneNumberField" description="Verify that the user can write in the Emergency phone number field" depends-on-groups="ShoppingCart" finished-at="2024-03-25T17:54:15 BDT" duration-ms="99" status="PASS">
+        <test-method signature="testEmergencyPhoneNumberField()[pri:0, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:07:59 BDT" name="testEmergencyPhoneNumberField" description="Verify that the user can write in the Emergency phone number field" depends-on-groups="ShoppingCart" finished-at="2024-03-26T20:07:59 BDT" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmergencyPhoneNumberField -->
-        <test-method signature="testSelectDistrict()[pri:1, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:15 BDT" name="testSelectDistrict" description="Verify that the user can select a district" depends-on-groups="ShoppingCart" finished-at="2024-03-25T17:54:16 BDT" duration-ms="391" status="PASS">
+        <test-method signature="testSelectDistrict()[pri:1, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:07:59 BDT" name="testSelectDistrict" description="Verify that the user can select a district" depends-on-groups="ShoppingCart" finished-at="2024-03-26T20:08:00 BDT" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectDistrict -->
-        <test-method signature="testSelectUpazila()[pri:2, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:16 BDT" name="testSelectUpazila" description="Verify that the user can select an area or Upazila" finished-at="2024-03-25T17:54:17 BDT" depends-on-methods="testcases.TestCheckout.testSelectDistrict" duration-ms="1488" status="PASS">
+        <test-method signature="testSelectUpazila()[pri:2, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:08:00 BDT" name="testSelectUpazila" description="Verify that the user can select an area or Upazila" finished-at="2024-03-26T20:08:03 BDT" depends-on-methods="testcases.TestCheckout.testSelectDistrict" duration-ms="3646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectUpazila -->
-        <test-method signature="testAddressField()[pri:3, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:17 BDT" name="testAddressField" description="Verify that the user can write the full address in the Address field" depends-on-groups="ShoppingCart" finished-at="2024-03-25T17:54:17 BDT" duration-ms="124" status="PASS">
+        <test-method signature="testAddressField()[pri:3, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:08:03 BDT" name="testAddressField" description="Verify that the user can write the full address in the Address field" depends-on-groups="ShoppingCart" finished-at="2024-03-26T20:08:03 BDT" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddressField -->
-        <test-method signature="testOtherInformationField()[pri:4, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:17 BDT" name="testOtherInformationField" description="Verify that the user can write in the Other information field" depends-on-groups="ShoppingCart" finished-at="2024-03-25T17:54:17 BDT" duration-ms="100" status="PASS">
+        <test-method signature="testOtherInformationField()[pri:4, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:08:03 BDT" name="testOtherInformationField" description="Verify that the user can write in the Other information field" depends-on-groups="ShoppingCart" finished-at="2024-03-26T20:08:03 BDT" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOtherInformationField -->
-        <test-method signature="testSelectPaymentOption()[pri:5, instance:testcases.TestCheckout@183ec003]" started-at="2024-03-25T17:54:17 BDT" name="testSelectPaymentOption" description="Verify that the user can select a payment option" depends-on-groups="ShoppingCart" finished-at="2024-03-25T17:54:19 BDT" duration-ms="2176" status="PASS">
+        <test-method signature="testSelectPaymentOption()[pri:5, instance:testcases.TestCheckout@5ddeb7cb]" started-at="2024-03-26T20:08:04 BDT" name="testSelectPaymentOption" description="Verify that the user can select a payment option" depends-on-groups="ShoppingCart" finished-at="2024-03-26T20:08:06 BDT" duration-ms="2143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectPaymentOption -->
       </class> <!-- testcases.TestCheckout -->
       <class name="testcases.TestHomePage">
-        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestHomePage@57a78e3]" started-at="2024-03-25T17:53:04 BDT" name="openABrowser" finished-at="2024-03-25T17:53:06 BDT" duration-ms="2529" status="PASS">
+        <test-method is-config="true" signature="openABrowser()[pri:0, instance:testcases.TestHomePage@7ce026d3]" started-at="2024-03-26T20:06:38 BDT" name="openABrowser" finished-at="2024-03-26T20:06:51 BDT" duration-ms="13308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openABrowser -->
-        <test-method signature="testDisplayFeatureBooks()[pri:0, instance:testcases.TestHomePage@57a78e3]" started-at="2024-03-25T17:53:07 BDT" name="testDisplayFeatureBooks" description="Verify that featured books are displayed on the home page" finished-at="2024-03-25T17:53:12 BDT" duration-ms="5135" status="PASS">
+        <test-method signature="testDisplayFeatureBooks()[pri:0, instance:testcases.TestHomePage@7ce026d3]" started-at="2024-03-26T20:06:51 BDT" name="testDisplayFeatureBooks" description="Verify that featured books are displayed on the home page" finished-at="2024-03-26T20:06:56 BDT" duration-ms="4735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayFeatureBooks -->
-        <test-method signature="testDisplayCarouselBanner()[pri:1, instance:testcases.TestHomePage@57a78e3]" started-at="2024-03-25T17:53:12 BDT" name="testDisplayCarouselBanner" description="Verify that any deals, discounts, or carousel banner are correctly displayed on the home page" finished-at="2024-03-25T17:53:12 BDT" depends-on-methods="testcases.TestHomePage.testDisplayFeatureBooks" duration-ms="195" status="PASS">
+        <test-method signature="testDisplayCarouselBanner()[pri:1, instance:testcases.TestHomePage@7ce026d3]" started-at="2024-03-26T20:06:56 BDT" name="testDisplayCarouselBanner" description="Verify that any deals, discounts, or carousel banner are correctly displayed on the home page" finished-at="2024-03-26T20:06:57 BDT" depends-on-methods="testcases.TestHomePage.testDisplayFeatureBooks" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayCarouselBanner -->
-        <test-method signature="testOpenCarouselBanner()[pri:2, instance:testcases.TestHomePage@57a78e3]" started-at="2024-03-25T17:53:12 BDT" name="testOpenCarouselBanner" description="Verify that carousel banners are working perfectly" finished-at="2024-03-25T17:53:15 BDT" depends-on-methods="testcases.TestHomePage.testDisplayFeatureBooks" duration-ms="2630" status="PASS">
+        <test-method signature="testOpenCarouselBanner()[pri:2, instance:testcases.TestHomePage@7ce026d3]" started-at="2024-03-26T20:06:57 BDT" name="testOpenCarouselBanner" description="Verify that carousel banners are working perfectly" finished-at="2024-03-26T20:07:00 BDT" depends-on-methods="testcases.TestHomePage.testDisplayFeatureBooks" duration-ms="3379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenCarouselBanner -->
-        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestHomePage@57a78e3]" started-at="2024-03-25T17:54:27 BDT" name="quiteBrowser" finished-at="2024-03-25T17:54:27 BDT" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:testcases.TestHomePage@7ce026d3]" started-at="2024-03-26T20:08:18 BDT" name="quiteBrowser" finished-at="2024-03-26T20:08:19 BDT" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
       </class> <!-- testcases.TestHomePage -->
       <class name="testcases.TestHeader">
-        <test-method signature="testDisplayLogo()[pri:1, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:12 BDT" name="testDisplayLogo" description="Verify whether the logo of the website is added or not on the header" finished-at="2024-03-25T17:53:12 BDT" duration-ms="62" status="PASS">
+        <test-method signature="testDisplayLogo()[pri:1, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:06:57 BDT" name="testDisplayLogo" description="Verify whether the logo of the website is added or not on the header" finished-at="2024-03-26T20:06:57 BDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayLogo -->
-        <test-method signature="testDisplayLoginRegister()[pri:0, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:15 BDT" name="testDisplayLoginRegister" description="Verify that the Login and Register option is displayed" depends-on-groups="homepage" finished-at="2024-03-25T17:53:16 BDT" duration-ms="1434" status="PASS">
+        <test-method signature="testDisplayLoginRegister()[pri:0, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:00 BDT" name="testDisplayLoginRegister" description="Verify that the Login and Register option is displayed" depends-on-groups="homepage" finished-at="2024-03-26T20:07:01 BDT" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayLoginRegister -->
-        <test-method signature="testDisplayMenuBar()[pri:2, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:16 BDT" name="testDisplayMenuBar" description="Verify that the Menu bar is added to the header" finished-at="2024-03-25T17:53:16 BDT" duration-ms="50" status="PASS">
+        <test-method signature="testDisplayMenuBar()[pri:2, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:01 BDT" name="testDisplayMenuBar" description="Verify that the Menu bar is added to the header" finished-at="2024-03-26T20:07:02 BDT" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplayMenuBar -->
-        <test-method signature="testDisplaySearchBar()[pri:3, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:16 BDT" name="testDisplaySearchBar" description="Verify that the Search bar is added to the header" finished-at="2024-03-25T17:53:16 BDT" duration-ms="50" status="PASS">
+        <test-method signature="testDisplaySearchBar()[pri:3, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:02 BDT" name="testDisplaySearchBar" description="Verify that the Search bar is added to the header" finished-at="2024-03-26T20:07:02 BDT" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDisplaySearchBar -->
-        <test-method signature="testOpenAMenu()[pri:4, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:16 BDT" name="testOpenAMenu" description="Verify that all menu options should be opened after clicking any menu" finished-at="2024-03-25T17:53:19 BDT" duration-ms="2870" status="PASS">
+        <test-method signature="testOpenAMenu()[pri:4, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:02 BDT" name="testOpenAMenu" description="Verify that all menu options should be opened after clicking any menu" finished-at="2024-03-26T20:07:04 BDT" duration-ms="2903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenAMenu -->
-        <test-method signature="testLogoFunctionality()[pri:5, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:19 BDT" name="testLogoFunctionality" description="Verify the home page should be open by clicking on the logo on all pages" finished-at="2024-03-25T17:53:22 BDT" duration-ms="2930" status="PASS">
+        <test-method signature="testLogoFunctionality()[pri:5, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:04 BDT" name="testLogoFunctionality" description="Verify the home page should be open by clicking on the logo on all pages" finished-at="2024-03-26T20:07:07 BDT" duration-ms="2649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogoFunctionality -->
-        <test-method signature="testOpenLoginAndRegisterPage()[pri:6, instance:testcases.TestHeader@7ce69770]" started-at="2024-03-25T17:53:22 BDT" name="testOpenLoginAndRegisterPage" description="Verify that the Login and Register option should be clickable" finished-at="2024-03-25T17:53:25 BDT" duration-ms="2810" status="PASS">
+        <test-method signature="testOpenLoginAndRegisterPage()[pri:6, instance:testcases.TestHeader@31ea9581]" started-at="2024-03-26T20:07:07 BDT" name="testOpenLoginAndRegisterPage" description="Verify that the Login and Register option should be clickable" finished-at="2024-03-26T20:07:09 BDT" duration-ms="2083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenLoginAndRegisterPage -->
       </class> <!-- testcases.TestHeader -->
       <class name="testcases.TestMyAccount">
-        <test-method signature="testMyAccountOption()[pri:0, instance:testcases.TestMyAccount@7d9d0818]" started-at="2024-03-25T17:54:19 BDT" name="testMyAccountOption" description="Verify that the My account option is clickable" depends-on-groups="checkout" finished-at="2024-03-25T17:54:23 BDT" duration-ms="3625" status="PASS">
+        <test-method signature="testMyAccountOption()[pri:0, instance:testcases.TestMyAccount@70ed52de]" started-at="2024-03-26T20:08:06 BDT" name="testMyAccountOption" description="Verify that the My account option is clickable" depends-on-groups="checkout" finished-at="2024-03-26T20:08:11 BDT" duration-ms="5765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMyAccountOption -->
-        <test-method signature="testLogout()[pri:1, instance:testcases.TestMyAccount@7d9d0818]" started-at="2024-03-25T17:54:23 BDT" name="testLogout" description="Verify that the user can log out by clicking the Logout option" finished-at="2024-03-25T17:54:27 BDT" depends-on-methods="testcases.TestMyAccount.testMyAccountOption" duration-ms="3870" status="PASS">
+        <test-method signature="testLogout()[pri:1, instance:testcases.TestMyAccount@70ed52de]" started-at="2024-03-26T20:08:11 BDT" name="testLogout" description="Verify that the user can log out by clicking the Logout option" finished-at="2024-03-26T20:08:18 BDT" depends-on-methods="testcases.TestMyAccount.testMyAccountOption" duration-ms="6655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogout -->
